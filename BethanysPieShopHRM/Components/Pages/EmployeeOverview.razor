@@ -1,0 +1,26 @@
+﻿@page "/employeeoverview"
+
+<h1>Employee Overview</h1>
+
+<table class="table table-light">
+    <thead class="table-primary">
+    <tr>
+        <th></th>
+        <th>Employee ID</th>
+        <th>First name</th>
+        <th>Last name</th>
+    </tr>
+    </thead>
+    <tbody>
+        @foreach (var employee in Employees)
+        {
+            <tr>
+                <td><img src="@($"https://gillcleerenpluralsight.blob.core.windows.net/person/{employee.EmployeeId}-small.jpg")" class="rounded-circle"/></td>
+                <td>@employee.EmployeeId</td>
+                <td>@employee.FirstName</td>
+                <td>@employee.LastName</td>
+            </tr>
+        }
+    </tbody>
+</table> 
+
