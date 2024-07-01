@@ -26,13 +26,13 @@ public class Employee
 
     public string? PhoneNumber { get; set; }
 
-    public bool Smoker { get; set; }
+    public bool Smoker { get; set; } = false;
 
     public MaritalStatus? MaritalStatus { get; set; }
 
     public Gender? Gender { get; set; }
 
-    public bool IsOnHoliday { get; set; }
+    public bool IsOnHoliday { get; set; } = false;
 
     public string Comment { get; set; } = string.Empty;
 
