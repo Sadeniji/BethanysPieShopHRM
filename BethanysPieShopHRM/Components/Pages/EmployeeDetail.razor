@@ -1,5 +1,5 @@
 ﻿@page "/employeedetail/{EmployeeId:int}"
-
+@using Microsoft.AspNetCore.Components.QuickGrid
 @rendermode InteractiveServer
 
 <section class="employee-detail">
@@ -138,6 +138,71 @@
             </div>
         </div>
     </div>
-
+    <h2>Time registrations</h2>
+    
+    @if (queryableCount > 0)
+    {
+        <QuickGrid Items="@itemsQueryable" Pagination="@pagination">
+            <PropertyColumn 
+                Property="@(p => p.TimeRegistrationId)" 
+                IsDefaultSortColumn="true" Title="ID" Sortable="true">
+            </PropertyColumn>
+            <PropertyColumn
+                Property="@(p => p.StartTime)"
+                Title="Start time" Sortable="true">
+            </PropertyColumn>
+            <PropertyColumn
+                Property="@(p => p.EndTime)"
+                Title="End time" Sortable="true">
+            </PropertyColumn>
+            <PropertyColumn
+                Property="@(p => p.PerformedTaskDescription)"
+                Title="Task" Align="Align.Left">
+            </PropertyColumn>
+        </QuickGrid>
+    }
+    else
+    {
+        <p>No time registrations found.</p>
+    }
+    @* @if (TimeRegistrations.Count == 0) *@
+    @* { *@
+    @*     <p><em>Loading time registrations...</em></p> *@
+    @* } *@
+    @* else *@
+    @* { *@
+    @*     <div class="virtualized"> *@
+    @*         <table class="table"> *@
+    @*             <thead> *@
+    @*             <tr> *@
+    @*                 <th>ID</th> *@
+    @*                 <th>Start time</th> *@
+    @*                 <th>End time</th> *@
+    @*                 <th>Task</th> *@
+    @*             </tr> *@
+    @*             </thead>     *@
+    @*             <tbody> *@
+    @*             <Virtualize ItemsProvider="LoadTimeRegistrations" ItemSize="itemHeight"> *@
+    @*                 <ItemContent> *@
+    @*                     <tr> *@
+    @*                         <td>@context.TimeRegistrationId</td> *@
+    @*                         <td>@context.StartTime</td> *@
+    @*                         <td>@context.EndTime</td> *@
+    @*                         <td>@context.PerformedTaskDescription</td> *@
+    @*                     </tr> *@
+    @*                 </ItemContent> *@
+    @*                 <Placeholder> *@
+    @*                     <tr> *@
+    @*                         <td>Loading...</td> *@
+    @*                         <td>Loading...</td> *@
+    @*                         <td>Loading...</td> *@
+    @*                         <td>Loading...</td> *@
+    @*                     </tr> *@
+    @*                 </Placeholder> *@
+    @*             </Virtualize> *@
+    @*             </tbody> *@
+    @*         </table> *@
+    @*     </div> *@
+    @* } *@
 
 </section>
