@@ -17,4 +17,19 @@ public class EmployeeDataService(IEmployeeRepository employeeRepository) : IEmpl
     {
         return await _employeeRepository.GetEmployeeById(employeeId);
     }
+
+    public async Task<Employee> AddEmployee(Employee employee)
+    {
+        return await _employeeRepository.AddEmployee(employee);
+    }
+
+    public async Task<Employee> UpdateEmployee(Employee employee)
+    {
+        return await _employeeRepository.UpdateEmployee(employee);
+    }
+
+    public async Task DeleteEmployee(int employeeId)
+    {
+        await _employeeRepository.DeleteEmployee(employeeId);
+    }
 }
