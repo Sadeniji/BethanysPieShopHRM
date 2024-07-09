@@ -1,9 +1,7 @@
-﻿using BethanysPieShopHRM.Contracts.Services;
-using BethanysPieShopHRM.Services;
-using BethanysPieShopHRM.Shared;
+﻿using BethanysPieShopHRM.Shared;
 using Microsoft.AspNetCore.Components;
 
-namespace BethanysPieShopHRM.Components.Pages;
+namespace BethanysPieShopHRM.Client.Pages;
 
 public partial class EmployeeOverview
 {
@@ -12,9 +10,9 @@ public partial class EmployeeOverview
 
     private const string Title = "Employee overview";
 
-    [Inject] 
+    [Inject]
     public IEmployeeDataService? EmployeeDataService { get; set; }
-    
+
     protected override async Task OnInitializedAsync()
     {
         //await Task.Delay(2000);

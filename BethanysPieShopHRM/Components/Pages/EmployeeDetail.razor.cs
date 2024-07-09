@@ -1,4 +1,5 @@
-﻿using BethanysPieShopHRM.Contracts.Services;
+﻿using BethanysPieShopHRM.Client;
+using BethanysPieShopHRM.Contracts.Services;
 using BethanysPieShopHRM.Shared;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.QuickGrid;

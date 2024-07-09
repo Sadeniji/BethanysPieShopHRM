@@ -1,6 +1,6 @@
 ﻿using BethanysPieShopHRM.Shared;
 
-namespace BethanysPieShopHRM.Contracts.Services;
+namespace BethanysPieShopHRM.Client;
 
 public interface IEmployeeDataService
 {

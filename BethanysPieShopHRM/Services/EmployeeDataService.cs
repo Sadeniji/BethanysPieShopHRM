@@ -1,4 +1,5 @@
-﻿using BethanysPieShopHRM.Contracts.Repositories;
+﻿using BethanysPieShopHRM.Client;
+using BethanysPieShopHRM.Contracts.Repositories;
 using BethanysPieShopHRM.Contracts.Services;
 using BethanysPieShopHRM.Shared;
 
