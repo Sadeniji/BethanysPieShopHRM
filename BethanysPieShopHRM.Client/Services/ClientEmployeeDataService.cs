@@ -2,6 +2,7 @@
 using BethanysPieShopHRM.Shared;
 using Blazored.LocalStorage;
 using BethanysPieShopHRM.Client.Helper;
+using BethanysPieShopHRM.Shared.Domain;
 
 namespace BethanysPieShopHRM.Client.Services;
 

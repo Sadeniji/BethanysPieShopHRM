@@ -1,4 +1,4 @@
-﻿namespace BethanysPieShopHRM.Shared;
+﻿namespace BethanysPieShopHRM.Shared.Domain;
 
 public class Country
 {

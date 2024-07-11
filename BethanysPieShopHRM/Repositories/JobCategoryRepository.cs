@@ -1,6 +1,7 @@
 ﻿using BethanysPieShopHRM.Contracts.Repositories;
 using BethanysPieShopHRM.Data;
 using BethanysPieShopHRM.Shared;
+using BethanysPieShopHRM.Shared.Domain;
 using Microsoft.EntityFrameworkCore;
 
 namespace BethanysPieShopHRM.Repositories;

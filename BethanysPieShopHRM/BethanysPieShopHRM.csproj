@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BethanysPieShopHRM.Client\BethanysPieShopHRM.Client.csproj" />
+    <ProjectReference Include="..\BethanysPieShopHRM.ComponentsLibrary\BethanysPieShopHRM.ComponentsLibrary.csproj" />
     <ProjectReference Include="..\BethanysPieShopHRM.Shared\BethanysPieShopHRM.Shared.csproj" />
   </ItemGroup>
 

@@ -1,4 +1,5 @@
 ﻿using BethanysPieShopHRM.Shared;
+using BethanysPieShopHRM.Shared.Domain;
 
 namespace BethanysPieShopHRM.Contracts.Repositories;
 

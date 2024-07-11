@@ -1,4 +1,5 @@
 ﻿using BethanysPieShopHRM.Shared;
+using BethanysPieShopHRM.Shared.Domain;
 using Microsoft.AspNetCore.Components;
 
 namespace BethanysPieShopHRM.Client.Components
